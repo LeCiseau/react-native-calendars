@@ -90,19 +90,13 @@ class Day extends Component {
       textStyle.push(this.style.todayText);
     }
     return (
-      <View
-        style={{
-          alignSelf: 'stretch'
-        }}>
+      <View>
         <TouchableOpacity testID={this.props.testID} style={containerStyle} onPress={this.onDayPress}>
           <Text allowFontScaling={false} style={textStyle}>
             {String(this.props.children)}
           </Text>
         </TouchableOpacity>
-        <View
-          style={{
-            alignSelf: 'stretch',
-          }}>
+        <View>
           {periods}
         </View>
       </View>
